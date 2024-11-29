@@ -1,0 +1,440 @@
+/* Parámetros para toda la página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Barra de navegación */
+
+.navbar{
+    background-color: white;
+    
+}
+
+.navbar-brand{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar-nav{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal; 
+    gap: 5px;
+}
+
+.nav-link:hover{
+    background-color: #E6E0D4;
+    border-radius: 10px;
+    transition: .6s ease;
+}
+
+.icons-right a img{
+    height: 15px;
+}
+
+.btn-dark{
+    width: 1.1em;
+    border: none;
+    background-color: white;
+    margin-left: 2.5em;
+}
+
+/* Estilos para la clase dark-mode del body */
+
+body{
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+ 
+/* Hero */
+
+.hero{
+    background:url("images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4.5em; 
+    height: 340px;
+}
+
+.contenedor-hero h1{
+    font-size: 1.8em;
+    font-weight: 300;
+    width: 10em;
+}
+
+.hero-text{
+    height: 50%;
+}
+
+.container h1{
+    color: white;
+}
+
+.btn-hero{
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color:black;
+    color: #F2EDE4;
+    padding: .4em .8em;
+    margin-top: 1.5em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hero:hover{
+    color: black;
+    background-color: white;
+    transition: .8s ease;
+}
+
+/* MAIN */
+/* Sección About */
+
+.about{  
+    margin: 6em 0;
+}
+
+.text-about p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    font-weight: 400;   
+    text-transform: capitalize; 
+    font-size: 14px;
+}
+
+.btn-about{
+    text-transform: uppercase;    
+    margin-top: 1.3em;
+    padding: .2em .4em;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+
+.btn-about:hover{
+    transform: scale(1.2);
+    transition: .8s ease;   
+}
+
+/* ventana pop up */
+
+.popup{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    
+}
+
+.popup-content{
+    background-color: rgb(192, 158, 113);
+    position: relative;
+    color: black;
+    padding: 40px;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7);
+ 
+}
+
+.popup-content h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.popup-content{
+    margin: 10px 0;
+    color: rgb(19, 116, 19);
+    font-weight: bold;
+}
+
+.form-popup{
+    margin-top: 15px;
+}
+
+.form-popup input{
+    padding: 5 px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(190, 188, 188, 0.844);
+    font-size: 14px;
+}
+
+.form-popup button{
+    padding: 6px;  
+    margin-left: 1.3em;  
+    background-color: rgb(180, 60, 12);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.close-btn{
+    width: 1em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Sección Carrusel */
+
+.slider-izquierdo img, .slider-derecho img{
+    width: 3em;
+}
+
+.slider-screen{
+    width: 600px;    
+    
+}
+
+.slider-screen img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+
+
+/* Sección Cards */
+
+.card-titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 4em 0 1em 0;
+}
+
+.card-titulo h2{
+    margin-bottom: .6em;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+.img-card{
+    width: 0px;
+    height: 250px;
+
+}
+
+.card-price{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Formulario */
+
+.formulario{
+    margin-top: 4em;
+    padding: 3em 0;
+    background-color: #E6E0D4 ;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.form-container h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.btn-question{
+    background-color: #121212;
+    color: #F2EDE4;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 10px 20px;
+    margin-top: 1em;
+}
+
+.btn-question:hover{
+    transition: .8s ease;
+    background-color: #735646;
+}
+
+
+/* FOOTER */
+
+footer{
+    height: 100px;
+    background-color: #121212;
+}
+
+footer a{
+    text-transform: uppercase;
+    font-size: .8em;    
+}
+
+.fot-padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.fot-padre a{
+    text-decoration: none;
+    color: white;
+}
+
+.fot-center{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+}
+
+.fot-center a{
+    font-size: 14px;
+}
+
+.fot-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.fot-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.fot-logos-right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.fot-logos-right img{
+    height: 20px;
+}
+
+
+.logo-left, .fot-logos-right img{
+    margin-bottom: 20px;
+}
+
+.logo-left{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal
+}
+
+
+/* Queries para celulares */
+@media (max-width: 576px){
+    main{
+        margin: 0 1em;
+    }
+    
+    .text-about p{
+        width: 75%;
+    }  
+    footer a{
+        flex-direction: row;
+        font-size: 12px;
+    }  
+    .logo-left{
+        font-size: 14px;
+    }
+    .fot-logos-right{
+        gap: 10px;
+    }
+    .fot-logos-right img{
+        height: 15px;
+    }
+
+    .fot-center{
+        text-align: center;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .fot-center a{
+        font-size: 11px;
+    }
+}
+
+
+/* Queries para tablet */
+@media (min-width: 576px) and (max-width: 992px){     
+    .text-about p{
+        width: 75%;
+    } 
+        
+    footer a{
+        flex-direction: row;
+        font-size: 12px;
+    }  
+    .logo-left{
+        font-size: 14px;
+    }
+    .fot-logos-right{
+        gap: 10px;
+    }
+    .fot-logos-right img{
+        height: 15px;
+    }
+
+    .fot-center{
+        text-align: center;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .fot-center a{
+        font-size: 11px;
+    }
+    .icons-right{
+        display: none;
+    }
+}
+
+
+
+
